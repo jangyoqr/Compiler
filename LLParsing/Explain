@@ -1,0 +1,35 @@
+아래 2개의 문법에 대하여 Recursive descent 파서와 Predictive parser를 각각 작성하시오.
+
+
+
+1) Identifier list를 인식하는 문법
+
+
+
+LIST -> LIST , ELEMENT
+
+LIST -> ELEMENT
+
+ELEMENT -> a
+
+
+
+
+    입력 예: "a,a,a,a,a"
+
+
+
+2) 덧셈, 곱셈 수식을 인식하는 문법
+
+E -> E + T
+
+E -> T
+
+T -> T * F
+
+T -> F
+
+F -> ( E )
+
+F -> a
+
